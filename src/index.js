@@ -13,8 +13,5 @@ menu.addEventListener('click', function (event) {
 
 hero.addEventListener('click', function () {
     drawer.classList.remove('open');
-});
-
-main.addEventListener('click', function () {
-    drawer.classList.remove('open');
+    event.stopPropagation();
 });
